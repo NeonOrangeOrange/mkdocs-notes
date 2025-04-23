@@ -2,9 +2,6 @@ site_name: Notes on MkDocs
 repo_url: https://github.com/NeonOrangeOrange/mkdocs-notes
 
 
-theme:
-  name: readthedocs
-
 nav:
   - Home: index.md
   - Markdown Cheat Sheet: cheatsheet.md
