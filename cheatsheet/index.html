@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Markdown Cheat Sheet - Notes on MkDocs</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Markdown Cheat Sheet";
+        var mkdocs_page_input_path = "cheatsheet.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Notes on MkDocs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Markdown Cheat Sheet</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#quick-reference">Quick Reference</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../tex/">Using Latex</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Notes on MkDocs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Markdown Cheat Sheet</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/NeonOrangeOrange/mkdocs-notes/edit/master/docs/cheatsheet.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="markdown-cheat-sheet">Markdown Cheat Sheet<a class="headerlink" href="#markdown-cheat-sheet" title="Permanent link">&para;</a></h1>
+<p><a href="">https://www.markdownguide.org/tools/mkdocs/</a></p>
+<p>This may be different based on your renderer</p>
+<h3 id="quick-reference">Quick Reference<a class="headerlink" href="#quick-reference" title="Permanent link">&para;</a></h3>
+<p>Headers are done with hashtags: <code># Header</code></p>
+<hr />
+<p>Horizontal rules: use three or more asterisks (<code>***</code>), dashes (<code>---</code>), or underscores (<code>___</code>) on a new line padded by new lines</p>
+<hr />
+<p>Emphasis is done with one <em>underscore</em> or <em>asterisk</em>: <code>_emphasis_ or *emphasis*</code></p>
+<p><strong>Bold</strong> is done with two <strong>underscores</strong> or <strong>asterisks</strong>: <code>__bold__ or **bold**</code></p>
+<p>Use <strong><em>three</em></strong> for <strong><em>both</em></strong> <code>___both___ or ***both***</code></p>
+<hr />
+<blockquote>
+<p>Blockquotes use a greater than symbol: <code>&gt;</code></p>
+<blockquote>
+<p>Nested blockquotes use multiple symbols: <code>&gt;&gt;</code></p>
+</blockquote>
+</blockquote>
+<hr />
+<ol>
+<li>Numbered lists have a number followed by a period: <code>1. text</code></li>
+<li>It will automatically number (at least in mkdocs): <code>99.</code><ol>
+<li>Sublists or indents are handled with spaces in front (it works better with tabs IMO)</li>
+<li>MkDocs does not like mixing ordered and unordered lists</li>
+</ol>
+</li>
+</ol>
+<hr />
+<ul>
+<li>Unordered lists use asterisks without a period <code>*</code><ul>
+<li>Or plusses: <code>+</code></li>
+<li>Or minuses: <code>-</code></li>
+<li>It looks like MkDocs may need some sort of seperator between lists</li>
+</ul>
+</li>
+</ul>
+<p>Links: <code>[This is what you want to show](this is where you want to go "This is a hint that will show at the cursor")</code></p>
+<ul>
+<li>You can go to a url with <code>http://...</code></li>
+<li>You can go to another relative md page <code>[This will take you to main](index.md)</code></li>
+<li>Use <code>/</code> and <code>../</code> to navigate directories</li>
+<li>If you leave the parenthsis blank, it shows the raw URL</li>
+</ul>
+<hr />
+<p><code>code</code> is done in backticks <code>`</code></p>
+<pre><code class="language-text">
+code blocks use a triple backtick: ```
+
+specify a language immediately after the first backtick: ```python or ```text
+
+</code></pre>
+<hr />
+<p>Tables are done with vertical bars</p>
+<pre><code class="language-text">
+| Left Align | Center Align | Right Align
+| :--- | :---: | ---:|
+|`---` or `:---` | `:---:` | `---:` |
+
+
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Left Align</th>
+<th style="text-align: center;">Center Align</th>
+<th style="text-align: right;">Right Align</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>---</code> or <code>:---</code></td>
+<td style="text-align: center;"><code>:---:</code></td>
+<td style="text-align: right;"><code>---:</code></td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-text">
+| Right Align | Center Align | Left Align
+| ---: | :---: | :---|
+|`---:` | `:---:` | `---` or `:---:` |
+
+
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Right Align</th>
+<th style="text-align: center;">Center Align</th>
+<th style="text-align: left;">Left Align</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><code>---:</code></td>
+<td style="text-align: center;"><code>:---:</code></td>
+<td style="text-align: left;"><code>---</code> or <code>:---:</code></td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../tex/" class="btn btn-neutral float-right" title="Using Latex">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/NeonOrangeOrange/mkdocs-notes" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../tex/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
