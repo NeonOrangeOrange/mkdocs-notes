@@ -1,0 +1,18 @@
+site_name: Notes on MkDocs
+repo_url: https://github.com/NeonOrangeOrange/mkdocs-notes
+
+
+theme:
+  name: readthedocs
+
+nav:
+  - Home: index.md
+  - Markdown Cheat Sheet: cheatsheet.md
+  - Using Latex: tex.md
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+markdown_extensions:
+  - toc:
+      permalink: true
+  - mdx_math
